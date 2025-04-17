@@ -38,3 +38,15 @@ img {
   top: 0;
   z-index: 1000;
 }
+
+.nav-link {
+  color: white;
+}
+
+.nav-link:hover {
+  color: darkred;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: darkred;
+}

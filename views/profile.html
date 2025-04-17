@@ -7,7 +7,7 @@
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css'>
-  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="../public/styles/style.css">
 
 </head>
 <body>
@@ -44,15 +44,20 @@
 <main>
 
   <div class="jumbotron">
-    <div class="container">
-      <h1 class="display-3" style="text-align: center;">Welcome to SOBIE!</h1>
-      <p>We are glad to see you here on the official SOBIE website! SOBIE is an annual academic conference that is held at the Sandestin Golf & Resort in San Destin, Florida. This year, the conference was from April 9th to April 11th, but don't worry, there will be another one next year. We don't want to bombard you with information immediately, but if you would like to learn more about what SOBIE is and possibly even attend the conference in the future, feel free to browse through the website and make yourself at home!</p>
+    <div class="container my-5">
+      <h1 class="display-4 text-center mb-4">Welcome to SOBIE's Official Site!</h1>
+    
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <p>
+            We are glad to see you here on the official SOBIE website! SOBIE is an annual academic conference that is held at the Sandestin Golf & Resort in San Destin, Florida which is shown to the right. As you can see, it is a beautiful destination, and a wonderful place for you and your family to enjoy while the conference is not in session. This year, the conference was from April 9th to April 11th, but don't worry, there will be another one next year. We don't want to bombard you with information immediately, but we do want you to be able to find everything on our website that you need to know. The homepage, the page you are on, consists of when the conference is, the history of SOBIE, SOBIE's mission, and a way that you can contact the SOBIE team to get more information. Along the top right of the website, you should see places to click that will direct you to other areas of our site. The registration page should have everything you need to register for the conference, the destination page will give travel information, discounts on the resort, and ways to book your stay, and the call for papers page will have all the necessary information you will need if you plan to present at the conference. Feel free to browse through the website and make yourself at home, and don't be shy to contact us!
+          </p>
+        </div>
+        <div class="col-md-6 text-center">
+          <img src="../public/images/destin.jpg" alt="SOBIE Conference Destination" class="img-fluid rounded shadow">
+        </div>
+      </div>
     </div>
-  </div>
-
-  <div class="container">
-    <img src="../public/images/destin.jpg" alt="SOBIE Conference" style="display: block; margin: auto;">
-  </div>
 
 
   <div class="container">
@@ -123,9 +128,6 @@
         </div>
       </div>
     </div>
-
-    <hr>
-
   </div>
 </div>
 
@@ -135,13 +137,29 @@
 
     
 <footer class="footer text-center mt-4">
-  <p>&copy; 2025 SOBIE | sobieconference.org   @SOBIE Web Team</p>
+  <ul class="nav justify-content-center">
+    <li class="nav-item">
+      <a href="https://sobieconference.org" class="nav-link px-2 text-body-secondary">
+        &copy; 2025 SOBIE |  sobieconference.org 
+      </a>
+    </li>
+    <li class="nav-item">
+      <a href="https://www.una.edu/faculty/bcumbie.html" target="_blank" class="nav-link px-2 text-body-secondary">
+        @SOBIE Web Team
+      </a>
+    </li>
+    <li class="nav-item">
+      <a href="https://www.buildingthepride.com/jobie/" target="_blank" class="nav-link px-2 text-body-secondary">
+        @JOBIE
+      </a>
+    </li>
+  </ul>
 </footer>
   
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js'></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.3/jquery-ui.min.js'></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js'></script>
-    <script  src="scripts/script.js"></script>
+    <script  src="../public/scripts/script.js"></script>
   
   </body>
   </html>
