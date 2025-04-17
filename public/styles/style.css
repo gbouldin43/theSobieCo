@@ -36,6 +36,8 @@ hr {
 
 img {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  height: 40px;
+  margin-right: 10px;
 }
 
 .navbar {
@@ -75,4 +77,8 @@ img {
 .btn-primary:hover {
   background-color: darkred;
   border-color: darkred;
+}
+
+h5 {
+  text-align: center;
 }

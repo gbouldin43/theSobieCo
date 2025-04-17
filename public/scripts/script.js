@@ -6,3 +6,19 @@ $( document ).ready(function() {
 });
 
 console.log("This is the official SOBIE website!");
+
+const updateData = () => {
+  return {
+    question: {
+      email: document.getElementById("inputEmail").value || "N/A",
+      questionAsked: document.getElementById("question").value || "N/A", 
+    },    
+  };
+};
+
+const submitQuestionBtn = document.getElementById("submitQuestionBtn");
+
+submitQuestionBtn.addEventListener("click", () => {
+  const updatedData = updateData();
+  console.log(JSON.stringify(updatedData, null, 2));
+});
