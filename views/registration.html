@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="styles/styles.css">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Conference Registration</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" />
+</head>
+<body>
+  <!-- comment this out to see registration page -->
+  <script>
+    // const isLoggedIn = localStorage.getItem("loggedIn");
+    // if (!isLoggedIn) {
+    //   alert("You must log in before registering.");
+    //   window.location.href = "login.html";
+    // }
+  </script>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+      <div class="container-fluid">
+        
+        <a class="navbar-brand d-flex align-items-center" href="#">
+          <img src="../public/images/sobie.png" alt="SOBIE Logo" style="height: 40px; margin-right: 10px;">
+          SOBIE: The Society of Business, Industry, & Economics
+        </a>
+        
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="profile.html">Homepage</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="" target="_blank">Destination</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="" target="_blank">Call for Papers</a>
+            </li>
+          </ul>
+        </div>
+    
+      </div>
+    </nav>
+
+  <div class="container mt-5">
+    <h2 class="display-4 text-center mb-4">Conference Registration</h2>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <div class="card mx-auto mb-4 w-100">
+          <div class="card-body">
+            <h4 class="card-title">Register for Sobie '25</h4>
+            <ul class="list-group">
+              <li class="list-group-item">
+                <b>Registration Fee</b> is $325 (<b>Free</b> for Students) </li>
+              <li class="list-group-item">
+                <b>Submit</b> Abstracts, Working or Complete Papers (submit during registration or later on)</li>
+              <li class="list-group-item">
+                <b>April 1st</b> Conference & Research Submission Deadline</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card mx-auto mb-4 w-100">
+          <div class="card-body">
+            <h4 class="card-title">SOBIE When & Where</h4>
+            <ul class="list-group">
+              <li class="list-group-item">
+                The SOBIE conference is held every <b>April</b></li>
+              <li class="list-group-item">
+                <a href="https://maps.app.goo.gl/iBk2csgBd7S6YXyZ6" target="lakeside">Linkside Conference Center</a>
+              <br>158 Sandestin Blvd N, Destin, FL 32550</li>
+              <li class="list-group-item">
+                <a href="https://www.sandestin.com" target="sandestin">Sandestin Golf & Beach Resort</a> </li>
+              <li class="list-group-item">
+                <a href="https://maps.app.goo.gl/uR3kCdU43txvP8zHA" target="mirimar">in Miramar Beach, Florida</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container mb-3">
+    <form action="messageofapproval.html" method="POST">
+      <div class="mb-3">
+        <label for="fullName" class="form-label">Full Name</label>
+        <input type="text" class="form-control" name="fullName" required />
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">Email Address</label>
+        <input type="email" class="form-control" name="email" required />
+      </div>
+      <div class="mb-3">
+        <label for="institution" class="form-label">Institution / Organization</label>
+        <input type="text" class="form-control" name="institution" />
+      </div>
+      <div class="mb-3">
+        <label for="role" class="form-label">Your Role</label>
+        <select class="form-select" name="role">
+          <option value="faculty">Faculty</option>
+          <option value="student">Student</option>
+          <option value="researcher">Researcher</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+      <button id="SubmitQuestBtn" type="submit" class="btn btn-primary w-100">Register</button>
+    </form>
+  </div>
+  <footer class="footer text-center mt-4">
+    <ul class="nav justify-content-center">
+      <li class="nav-item">
+        <a href="https://sobieconference.org" class="nav-link px-2 text-body-secondary">
+          &copy; 2025 SOBIE |  sobieconference.org 
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="https://www.una.edu/faculty/bcumbie.html" target="_blank" class="nav-link px-2 text-body-secondary">
+          @SOBIE Web Team
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="https://www.buildingthepride.com/jobie/" target="_blank" class="nav-link px-2 text-body-secondary">
+          @JOBIE
+        </a>
+      </li>
+    </ul>
+  </footer>
+</body>
+</html>
